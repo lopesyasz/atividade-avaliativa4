@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+function calcularSalario() {
+    let salario = parseFloat(prompt("Digite o seu salário:"));
+    let opcao = prompt("Escolha uma opção: \nA = 10% \nB = 15% \nC = 20%");
+
+    switch(opcao.toUpperCase()) {
+        case 'A':
+            salario += salario * 0.10;
+            break;
+        case 'B':
+            salario += salario * 0.15;
+            break;
+        case 'C':
+            salario += salario * 0.20;
+            break;
+        default:
+            alert("Opção inválida!");
+            return;
+    }
+
+    alert("Seu novo salário é: " + salario);
+}
+</script>
+
+<button onclick="calcularSalario()">Calcular Salário</button>
+
+</body>
+</html>
